@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que é - Bíblia</title>
+  <link rel="icon" href="images/Biblelogo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Topo com logo -->
+  <div class="top-header text-center py-3">
+    <img src="images/Biblelogo.png" alt="Logo Bíblia" class="logo-header">
+    <span class="titulo-header">Bíblia</span>
+  </div>
+  <div class="linha-dourada"></div>
+
+  <!-- Menu -->
+  <nav class="menu-header text-center mb-4">
+    <a href="index.html" class="menu-link btn-animado1">Início</a>
+    <span class="divisor">|</span>
+    <a href="oquee.html" class="menu-link text-warning fw-bold btn-animado1">O que é</a>
+    <span class="divisor">|</span>
+    <a href="fotos.html" class="menu-link btn-animado1">Fotos</a>
+    <span class="divisor">|</span>
+    <a href="curiosidades.html" class="menu-link btn-animado1">Curiosidades</a>
+  </nav>
+
+  <!-- Hero header -->
+  <header class="hero-header2">
+    <div class="header-content">
+      <h1 class="display-4 text-warning">Descubra a Bíblia</h1>
+      <p class="lead">Entenda a origem, a mensagem e a importância de cada livro da Palavra de Deus.</p>
+      <a href="https://pt.wikipedia.org/wiki/B%C3%ADblia" class="btn btn-warning mt-3 fw-bold btn-animado">Explorar</a>
+    </div>
+  </header>
+
+  <!-- Seção Sobre detalhada com acordeão -->
+  <section id="sobre" class="sobre-section container py-5">
+    <h2 class="text-warning text-center mb-4">Sobre Cada Livro da Bíblia</h2>
+    <p class="text-center mb-4">A Bíblia é dividida em dois grandes blocos: o Antigo Testamento, que conta a história do
+      povo de Israel e suas leis, e o Novo Testamento, que narra a vida, ensinamentos e obras de Jesus Cristo, bem como
+      a fundação da Igreja. Clique em cada seção para explorar os livros.</p>
+
+    <div class="accordion" id="bibleAccordion">
+
+      <!-- Antigo Testamento -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOld">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOld" aria-expanded="false" aria-controls="collapseOld">
+            Antigo Testamento
+          </button>
+        </h2>
+        <div id="collapseOld" class="accordion-collapse collapse" aria-labelledby="headingOld"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="livro-card">
+              <h4>Gênesis</h4>
+              <p>Criação, Adão e Eva, Noé, Abraão e seus descendentes.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Êxodo</h4>
+              <p>Saída do Egito, Moisés, Dez Mandamentos e Tabernáculo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Levítico</h4>
+              <p>Leis, rituais e instruções de pureza do povo de Israel.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Números</h4>
+              <p>Jornada pelo deserto e desafios antes da Terra Prometida.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Deuteronômio</h4>
+              <p>Revisão das leis e da história antes de entrar em Canaã.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Josué</h4>
+              <p>Conquista da Terra Prometida e divisão entre tribos.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Juízes</h4>
+              <p>Líderes de Israel antes da monarquia.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Rute</h4>
+              <p>História de fé, lealdade e devoção familiar.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 Samuel</h4>
+              <p>Transição de Israel tribal para a monarquia, Samuel, Saul e Davi.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 Samuel</h4>
+              <p>Reinado de Davi e lições de liderança e fé.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 Reis</h4>
+              <p>História de Salomão e a divisão do reino.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 Reis</h4>
+              <p>Reis de Israel e Judá até o exílio babilônico.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 Crônicas</h4>
+              <p>Genealogias e reinado de Davi.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 Crônicas</h4>
+              <p>Reinado de Salomão e história de Judá.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Esdras</h4>
+              <p>Retorno do exílio e reconstrução do Templo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Neemias</h4>
+              <p>Reconstrução dos muros de Jerusalém e reformas religiosas.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Esther</h4>
+              <p>História de coragem da rainha Esther para salvar os judeus.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Jó</h4>
+              <p>Exploração da fé, sofrimento e justiça de Deus.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Salmos</h4>
+              <p>Poemas e cânticos de louvor e oração.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Provérbios</h4>
+              <p>Ensinamentos de sabedoria prática e moral.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Eclesiastes</h4>
+              <p>Reflexões sobre a vida, trabalho e vaidade.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Cântico dos Cânticos</h4>
+              <p>Poema de amor e beleza simbólica.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Isaías</h4>
+              <p>Profecias de juízo e esperança messiânica.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Jeremias</h4>
+              <p>Profecias de advertência e promessa de restauração.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Lamentações</h4>
+              <p>Choro da destruição de Jerusalém e esperança em Deus.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Ezequiel</h4>
+              <p>Visões e mensagens de restauração durante o exílio.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Daniel</h4>
+              <p>Profecias, sonhos e fidelidade a Deus em tempos difíceis.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Oséias</h4>
+              <p>Profecias sobre fidelidade e amor de Deus.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Joel</h4>
+              <p>Chamado ao arrependimento e promessa de derramamento do Espírito.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Amós</h4>
+              <p>Justiça social e julgamento divino.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Obadias</h4>
+              <p>Profecia contra Edom e vindicação de Israel.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Jonas</h4>
+              <p>História de arrependimento e misericórdia.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Miquéias</h4>
+              <p>Profecias de juízo e esperança messiânica.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Naum</h4>
+              <p>Profecia sobre a queda de Nínive.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Habacuque</h4>
+              <p>Diálogo com Deus sobre justiça e sofrimento.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Sofonias</h4>
+              <p>Chamado ao arrependimento e esperança futura.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Ageu</h4>
+              <p>Exortação à reconstrução do Templo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Zacarias</h4>
+              <p>Profecias de restauração e messianismo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Malaquias</h4>
+              <p>Profeta final do Antigo Testamento, chamando Israel ao arrependimento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Novo Testamento -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNew">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseNew" aria-expanded="false" aria-controls="collapseNew">
+            Novo Testamento
+          </button>
+        </h2>
+        <div id="collapseNew" class="accordion-collapse collapse" aria-labelledby="headingNew"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="livro-card">
+              <h4>Mateus</h4>
+              <p>Vida, ministério, morte e ressurreição de Jesus, cumprimento das profecias.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Marcos</h4>
+              <p>Milagres e ensinamentos de Jesus, destacando autoridade e compaixão.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Lucas</h4>
+              <p>Detalhes sobre o nascimento de Jesus e cuidado pelos marginalizados.</p>
+            </div>
+            <div class="livro-card">
+              <h4>João</h4>
+              <p>Identidade divina de Jesus, palavras de vida eterna e relacionamento com o Pai.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Atos dos Apóstolos</h4>
+              <p>Início da Igreja, primeiros missionários e derramamento do Espírito Santo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Romanos</h4>
+              <p>Carta de Paulo sobre fé, salvação e vida cristã.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 Coríntios</h4>
+              <p>Instruções para a igreja de Corinto sobre moral, fé e adoração.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 Coríntios</h4>
+              <p>Enfatiza reconciliação, generosidade e defesa do ministério de Paulo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Gálatas</h4>
+              <p>Liberdade em Cristo e superação da lei.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Efésios</h4>
+              <p>Exorta à unidade e amor na igreja.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Filipenses</h4>
+              <p>Alegre perseverança na fé e exemplo de Cristo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Colossenses</h4>
+              <p>Supremacia de Cristo e vida em santidade.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 Tessalonicenses</h4>
+              <p>Instruções e encorajamento aos novos cristãos.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 Tessalonicenses</h4>
+              <p>Reforço da fé e esperança no retorno de Cristo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 Timóteo</h4>
+              <p>Instruções para líderes e vida da igreja.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 Timóteo</h4>
+              <p>Exortação à fidelidade e perseverança em Cristo.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Tito</h4>
+              <p>Diretrizes para liderança e organização da igreja.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Filemom</h4>
+              <p>Carta pessoal de Paulo sobre perdão e reconciliação.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Hebreus</h4>
+              <p>Supremacia de Cristo e fé firme.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Tiago</h4>
+              <p>Ética prática e sabedoria cristã.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 Pedro</h4>
+              <p>Exortação à perseverança e santidade.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 Pedro</h4>
+              <p>Advertência contra falsos mestres.</p>
+            </div>
+            <div class="livro-card">
+              <h4>1 João</h4>
+              <p>Amor, fé e vitória sobre o mal.</p>
+            </div>
+            <div class="livro-card">
+              <h4>2 João</h4>
+              <p>Encorajamento à fé e advertência sobre enganos.</p>
+            </div>
+            <div class="livro-card">
+              <h4>3 João</h4>
+              <p>Exortação à hospitalidade e fidelidade.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Judas</h4>
+              <p>Advertência contra heresia e incentivo à fé.</p>
+            </div>
+            <div class="livro-card">
+              <h4>Apocalipse</h4>
+              <p>Visão profética do fim dos tempos e vitória final de Deus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center py-3 mt-5">
+    <p class="mb-0">© 2025 - Site da Bíblia, feito para a atividade final de DSA1</p>
+    <div class="footer-item">
+      <a href="https://www.instagram.com/nnunes.01/" target="_blank" class="footer-link">
+        <i class="fab fa-instagram"></i> Nicollas, número 22 - INF1ET
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="https://www.instagram.com/wallace_neris0/" target="_blank" class="footer-link">
+        <i class="fab fa-instagram"></i> Wallace Neris, número 34 - INF1ET
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
