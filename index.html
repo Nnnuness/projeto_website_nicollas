@@ -1,19 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Bíblia</title>
+    <link rel="icon" href="images/Biblelogo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque sit quisquam veniam libero, et neque
-        eius, adipisci praesentium voluptates fuga! Officia molestiae sed odio temporibus possimus, harum ipsam tempora?
-    </p>
-<h1>Olá mundo</h1>
-    <img src="images/th.webp" alt="">
+    <!-- Topo com logo centralizada e título -->
+    <div class="top-header text-center py-3">
+        <img src="images/Biblelogo.png" alt="Logo Bíblia" class="logo-header">
+        <span class="titulo-header">Bíblia</span>
+    </div>
+
+    <!-- Linha dourada abaixo do topo -->
+    <div class="linha-dourada"></div>
+
+    <!-- Menu centralizado -->
+    <nav class="menu-header text-center mb-4">
+        <a href="index.html" class="menu-link text-warning fw-bold btn-animado1">Início</a>
+        <span class="divisor">|</span>
+        <a href="oquee.html" class="menu-link btn-animado1">O que é</a>
+        <span class="divisor">|</span>
+        <a href="fotos.html" class="menu-link btn-animado1">Fotos</a>
+        <span class="divisor">|</span>
+        <a href="curiosidades.html" class="menu-link btn-animado1">Curiosidades</a>
+    </nav>
+
+    <!-- Hero -->
+    <header
+        class="hero-header text-center text-white d-flex align-items-center justify-content-center position-relative">
+        <div class="header-content" style="position: relative; z-index: 2;">
+            <h1 class="display-4 text-warning">A Bíblia: Luz para o Caminho</h1>
+            <p class="lead">Uma experiência para conhecer a Palavra de Deus</p>
+            <a href="https://www.bible.com/bible/1966/GEN.1.NBV-P"
+                class="btn btn-warning mt-3 fw-bold btn-animado">Saiba Mais</a>
+            <section class="text-center my-4">
+            </section>
+        </div>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section class="container py-5">
+        <h2 class="text-warning text-center mb-4">Sobre este site</h2>
+        <p class="text-center">Este espaço foi criado para quem deseja aprender mais sobre a Bíblia de forma simples,
+            organizada e inspiradora. Explore os conteúdos, conheça a história das Escrituras e veja imagens que
+            representam momentos marcantes.</p>
+
+        <div class="row text-center mt-4">
+    <div class="col-md-4 p-3">
+        <a href="https://pt.wikipedia.org/wiki/Antigo_Testamento" class="card-link" style="text-decoration: none;">
+            <div class="card-animado d-flex flex-column h-100">
+                <h4 class="text-warning">Antigo Testamento, o princípio</h4>
+                <p>Conheça as origens, a criação, os profetas e a história do povo de Israel.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4 p-3">
+        <a href="https://pt.wikipedia.org/wiki/Novo_Testamento" class="card-link" style="text-decoration: none;">
+            <div class="card-animado d-flex flex-column h-100">
+                <h4 class="text-warning">Novo Testamento, a vinda de Jesus</h4>
+                <p>Explore a vida de Jesus Cristo, os apóstolos e os primeiros passos da Igreja.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4 p-3">
+        <a href="https://www.bibliaon.com/versiculos_mais_conhecidos/" class="card-link" style="text-decoration: none;">
+            <div class="card-animado d-flex flex-column h-100">
+                <h4 class="text-warning">Versículos marcantes</h4>
+                <p>Palavras que transformam vidas, que inspiram, confortam e dão direção.</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+    </section>
+
+    <section class="container text-center my-5 card-animado" id="versiculo-dia">
+        <h2 class="text-warning">📖 Versículo do Dia</h2>
+        <p id="versiculo-texto" style="font-style: italic;">Carregando versículo...</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center py-3 mt-5">
+        <p class="mb-0">© 2025 - Site da Bíblia, feito para a atividade final de DSA1</p>
+        <div class="footer-item">
+            <a href="https://www.instagram.com/nnunes.01/" target="_blank" class="footer-link">
+                <i class="fab fa-instagram"></i> Nicollas, número 22 - INF1ET
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="https://www.instagram.com/wallace_neris0/" target="_blank" class="footer-link">
+                <i class="fab fa-instagram"></i> Wallace Neris, número 34 - INF1ET
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        async function carregarVersiculo() {
+            // Lista de versículos conhecidos para evitar erro
+            const versiculos = [
+                "john 3:16", "psalm 23:1", "romans 8:28", "jeremiah 29:11", "proverbs 3:5",
+                "matthew 11:28", "isaiah 41:10", "philippians 4:13", "genesis 1:1", "psalm 91:1"
+            ];
+
+            // Sorteia um versículo da lista
+            const referencia = versiculos[Math.floor(Math.random() * versiculos.length)];
+
+            try {
+                const resposta = await fetch(`https://bible-api.com/${referencia}?translation=almeida`);
+                const dados = await resposta.json();
+                const texto = `"${dados.text}" — ${dados.reference}`;
+                document.getElementById("versiculo-texto").innerText = texto;
+            } catch (e) {
+                document.getElementById("versiculo-texto").innerText = "Não foi possível carregar o versículo hoje.";
+            }
+        }
+
+        carregarVersiculo();
+    </script>
 </body>
 
 </html>
