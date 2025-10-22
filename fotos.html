@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotos - Bíblia</title>
+  <link rel="icon" href="images/Biblelogo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Topo com logo -->
+  <div class="top-header text-center py-3">
+    <img src="images/Biblelogo.png" alt="Logo Bíblia" class="logo-header">
+    <span class="titulo-header">Bíblia</span>
+  </div>
+  <div class="linha-dourada"></div>
+
+  <!-- Menu -->
+  <nav class="menu-header text-center mb-4">
+    <a href="index.html" class="menu-link btn-animado1">Início</a>
+    <span class="divisor">|</span>
+    <a href="oquee.html" class="menu-link btn-animado1">O que é</a>
+    <span class="divisor">|</span>
+    <a href="fotos.html" class="menu-link text-warning fw-bold btn-animado1">Fotos</a>
+    <span class="divisor">|</span>
+    <a href="curiosidades.html" class="menu-link btn-animado1">Curiosidades</a>
+  </nav>
+
+  <!-- Hero header -->
+  <header class="hero-header3">
+    <div class="header-content">
+      <h1 class="display-4 text-warning">Galeria de Fotos</h1>
+      <p class="lead">Explore imagens que ilustram histórias, personagens e passagens da Bíblia. (OBS: as imagens podem
+        ou não condizer com a realidade, pois são ilustrações HUMANAS de Deus ou de outras pessoas que viveram séculos
+        antes da criação dessas imagens. Êx. 20.) </p>
+      <a href="https://www.sbb.org.br/museu-da-biblia" class="btn btn-warning mt-3 fw-bold btn-animado">Ver Fotos</a>
+    </div>
+  </header>
+
+  <!-- Destaques: Deus, Jesus e Espírito Santo -->
+  <section class="container py-5 text-center">
+    <h2 class="text-warning mb-4">A santa trindade</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="livro-card1">
+          <img src="images/deuspai.webp" alt="Deus Pai" class="img-fluid mb-2">
+          <h4>Deus Pai</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="livro-card1">
+          <img src="images/jesus1.webp" alt="Jesus Cristo" class="img-fluid mb-2">
+          <h4>Jesus Cristo</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="livro-card1">
+          <img src="images/espiritosanto.jpg" alt="Espírito Santo" class="img-fluid mb-2">
+          <h4>Espírito Santo</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria dos livros -->
+  <section class="sobre-section container py-5">
+    <h2 class="text-warning text-center mb-4">Livros da Bíblia</h2>
+    <p class="text-center mb-5">Clique em cada categoria para ver os livros correspondentes.</p>
+
+    <div class="accordion" id="bibleAccordion">
+
+      <!-- Pentateuco -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPentateuco">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsePentateuco" aria-expanded="false" aria-controls="collapsePentateuco">
+            Pentateuco
+          </button>
+        </h2>
+        <div id="collapsePentateuco" class="accordion-collapse collapse" aria-labelledby="headingPentateuco"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/genesis.jpg">
+                  <h4>Gênesis</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/exodo.webp">
+                  <h4>Êxodo</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/levitico.webp">
+                  <h4>Levítico</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/numeros.jpg">
+                  <h4>Números</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/deuteronomio.webp">
+                  <h4>Deuteronômio</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Livros Históricos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHistoricos">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseHistoricos" aria-expanded="false" aria-controls="collapseHistoricos">
+            Livros Históricos
+          </button>
+        </h2>
+        <div id="collapseHistoricos" class="accordion-collapse collapse" aria-labelledby="headingHistoricos"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/josue.jpeg">
+                  <h4>Josué</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/juizes.jpg">
+                  <h4>Juízes</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/rute.jpg">
+                  <h4>Rute</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1samuel.webp">
+                  <h4>1 Samuel</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2samuel.jpg">
+                  <h4>2 Samuel</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1reis.webp">
+                  <h4>1 Reis</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2reis.jpg">
+                  <h4>2 Reis</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1cronicas.jpg">
+                  <h4>1 Crônicas</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2cronicas.jpg">
+                  <h4>2 Crônicas</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/esdras.avif">
+                  <h4>Esdras</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/neemias.jpg">
+                  <h4>Neemias</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/ester.jpg">
+                  <h4>Ester</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Livros Poéticos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPoeticos">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsePoeticos" aria-expanded="false" aria-controls="collapsePoeticos">
+            Livros Poéticos
+          </button>
+        </h2>
+        <div id="collapsePoeticos" class="accordion-collapse collapse" aria-labelledby="headingPoeticos"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/jo.jpg">
+                  <h4>Jó</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/salmos.jpeg">
+                  <h4>Salmos</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/proverbios.jpg">
+                  <h4>Provérbios</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/eclesiastes.webp">
+                  <h4>Eclesiastes</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/canticodoscanticos.jpg">
+                  <h4>Cânticos</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profetas Maiores -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingProfMaiores">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseProfMaiores" aria-expanded="false" aria-controls="collapseProfMaiores">
+            Profetas Maiores
+          </button>
+        </h2>
+        <div id="collapseProfMaiores" class="accordion-collapse collapse" aria-labelledby="headingProfMaiores"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/isais.jpg">
+                  <h4>Isaías</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/jeremias.jpg">
+                  <h4>Jeremias</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/lamentacoes.png">
+                  <h4>Lamentações</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/ezequiel.jpg">
+                  <h4>Ezequiel</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/daniel.jpeg">
+                  <h4>Daniel</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profetas Menores -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingProfMenores">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseProfMenores" aria-expanded="false" aria-controls="collapseProfMenores">
+            Profetas Menores
+          </button>
+        </h2>
+        <div id="collapseProfMenores" class="accordion-collapse collapse" aria-labelledby="headingProfMenores"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/oseias.jpg">
+                  <h4>Oséias</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/joel.jpg">
+                  <h4>Joel</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/amos.jpg">
+                  <h4>Amós</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/obadias.jpg">
+                  <h4>Obadias</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/joao.png">
+                  <h4>Jonas</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/miqueias.jpg">
+                  <h4>Miquéias</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/naum.jpg">
+                  <h4>Naum</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/habacuque.jpg">
+                  <h4>Habacuque</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/sofonias.jpg">
+                  <h4>Sofonias</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/ageu.jpg">
+                  <h4>Ageu</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/zacarias.jpeg">
+                  <h4>Zacarias</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/malaquias.jpg">
+                  <h4>Malaquias</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evangelhos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEvangelhos">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEvangelhos" aria-expanded="false" aria-controls="collapseEvangelhos">
+            Evangelhos
+          </button>
+        </h2>
+        <div id="collapseEvangelhos" class="accordion-collapse collapse" aria-labelledby="headingEvangelhos"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/mateus.webp">
+                  <h4>Mateus</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/marcos.jpeg">
+                  <h4>Marcos</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/lucas.webp">
+                  <h4>Lucas</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/joao.png">
+                  <h4>João</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Atos e Cartas -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAtosCartas">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseAtosCartas" aria-expanded="false" aria-controls="collapseAtosCartas">
+            Atos dos Apóstolos e Cartas
+          </button>
+        </h2>
+        <div id="collapseAtosCartas" class="accordion-collapse collapse" aria-labelledby="headingAtosCartas"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/atos.jpeg">
+                  <h4>Atos dos Apóstolos</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/romanos.jpeg">
+                  <h4>Romanos</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1corintios.webp">
+                  <h4>1 Coríntios</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2corintios.webp">
+                  <h4>2 Coríntios</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/galatas.jpg">
+                  <h4>Gálatas</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/efesios.jpg">
+                  <h4>Efésios</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/filipenss.jpg">
+                  <h4>Filipenses</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/colossenses.jpg">
+                  <h4>Colossenses</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1tessalonicenses.jpg">
+                  <h4>1 Tessalonicenses</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2tessalonicenses.webp">
+                  <h4>2 Tessalonicenses</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1timoteo.webp">
+                  <h4>1 Timóteo</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2timoteo.jpg">
+                  <h4>2 Timóteo</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/tito.jpg">
+                  <h4>Tito</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/filemom.jpg">
+                  <h4>Filemom</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/hebreus.jpeg">
+                  <h4>Hebreus</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/tiago.jpg">
+                  <h4>Tiago</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1pedro.avif">
+                  <h4>1 Pedro</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2pedro.jpg">
+                  <h4>2 Pedro</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/1 joao.webp">
+                  <h4>1 João</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/2joao.webp">
+                  <h4>2 João</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/3joao.jpg">
+                  <h4>3 João</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/judas.jpg">
+                  <h4>Judas</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apocalipse -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingApocalipse">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseApocalipse" aria-expanded="false" aria-controls="collapseApocalipse">
+            Apocalipse
+          </button>
+        </h2>
+        <div id="collapseApocalipse" class="accordion-collapse collapse" aria-labelledby="headingApocalipse"
+          data-bs-parent="#bibleAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
+              <div class="col-md-3">
+                <div class="livro-card1 text-center"><img src="images/apocalipse.jpg">
+                  <h4>Apocalipse</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center py-3 mt-5">
+    <p class="mb-0">© 2025 - Site da Bíblia, feito para a atividade final de DSA1</p>
+    <div class="footer-item">
+      <a href="https://www.instagram.com/nnunes.01/" target="_blank" class="footer-link">
+        <i class="fab fa-instagram"></i> Nicollas, número 22 - INF1ET
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="https://www.instagram.com/wallace_neris0/" target="_blank" class="footer-link">
+        <i class="fab fa-instagram"></i> Wallace Neris, número 34 - INF1ET
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
