@@ -74,7 +74,6 @@ button,
 .btn-animado {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
-  /* igual à imagem */
 }
 
 .btn-animado:hover {
@@ -245,7 +244,7 @@ header {
   z-index: 1;
 }
 
-/* Conteúdo do header sempre à frente */
+/* Conteúdo do header sempre na frente */
 .header-content {
   position: relative;
   z-index: 2;
@@ -417,7 +416,7 @@ img {
   border-radius: 8px;
 }
 
-/* =================== Padronização das boxes e imagens =================== */
+/* Padronização das boxes e imagens */
 
 .livro-card1 {
   width: 100%;
